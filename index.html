@@ -13,6 +13,7 @@
             background-image: url(backgroundroll.gif);
             background-repeat: no-repeat;
             background-size: 100vw 100vh;
+            background-attachment: fixed;
         }
 
         header {
@@ -46,6 +47,29 @@
             color: rgb(255, 174, 0);
         }
 
+        #content-body {
+            border: 2px solid white;
+            width: 700px;
+            margin: 30px auto;
+        }
+        .first-section{
+            margin: 30px 0px;
+            color: white;
+            text-align: justify;
+        }
+        /* .shadow {
+            transition: all 0.4s;
+            box-shadow: 0px 5px 5px;
+        } */
+        .animateshadow {
+            animation-name: shadowing;
+            animation-duration: 0.4s; animation-direction: alternate ;animation-iteration-count: 2;
+        }
+        @keyframes shadowing {
+            to {
+                box-shadow: 0px 5px 5px;
+            }
+        }
         @media screen and (max-width: 420px) {
             #logoimg img {
                 width: 250px;
@@ -64,10 +88,32 @@
             <img src="logo-no-background.png" alt="restaurant logo">
         </div>
         <nav>
-            <a href="#aboutcontent"><span>ABOUT US</span></a><a href="#services"><span>SERVICES</span></a>
-            <a href="#contact"><span>CONTACT US</span></a><a href="#order"><span>ORDER NOW</span></a>
+            <a href="#aboutcontent" id="abt-us-link"><span>ABOUT US</span></a><a href="#services"><span>SERVICES</span></a><a href="#contact"><span>CONTACT US</span></a><a href="#order"><span>ORDER NOW</span></a>
         </nav>
     </header>
+    <div id="content-body">
+        <div class="first-section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos, tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores, soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate? Assumenda, iure esse explicabo architecto reiciendis, odit voluptatibus ipsam tenetur pariatur placeat impedit ad adipisci ducimus alias ea iste laudantium eligendi excepturi hic similique provident quas. Amet excepturi veniam enim asperiores id adipisci repellat exercitationem, velit sunt quo aspernatur aliquam voluptatem molestiae! Harum, est ipsum, exercitationem aperiam maiores, officiis quam vel quia magnam expedita error culpa. Tenetur laborum vero inventore illum assumenda ex quam harum expedita, deleniti quaerat. Excepturi dolorem possimus ipsum tempore consequuntur molestias! Asperiores, omnis! Ipsa amet excepturi odit provident commodi rerum nesciunt nobis nisi error veniam deserunt totam iste pariatur magnam at sit incidunt recusandae modi, mollitia cumque, autem magni. Quisquam obcaecati quasi mollitia, minus voluptates delectus ullam hic at placeat enim sunt ea a, repellendus dolore iste minima cupiditate, quae officia perspiciatis. Harum, ad. Repudiandae eius et illum est ad, eligendi harum ut aut, odit sapiente quidem, illo nam cum. Non necessitatibus obcaecati ex? Voluptatem, est veniam aliquid facere nemo obcaecati perspiciatis eaque, non aspernatur magnam doloribus. Perferendis optio necessitatibus praesentium voluptatibus iste a quae, minus deleniti sunt! Iure iusto, dicta quidem culpa modi ab suscipit!
+        </div>
+        <div class="first-section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos, tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores, soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate? Assumenda, iure esse explicabo architecto reiciendis, odit voluptatibus ipsam tenetur pariatur placeat impedit ad adipisci ducimus alias ea iste laudantium eligendi excepturi hic similique provident quas. Amet excepturi veniam enim asperiores id adipisci repellat exercitationem, velit sunt quo aspernatur aliquam voluptatem molestiae! Harum, est ipsum, exercitationem aperiam maiores, officiis quam vel quia magnam expedita error culpa. Tenetur laborum vero inventore illum assumenda ex quam harum expedita, deleniti quaerat. Excepturi dolorem possimus ipsum tempore consequuntur molestias! Asperiores, omnis! Ipsa amet excepturi odit provident commodi rerum nesciunt nobis nisi error veniam deserunt totam iste pariatur magnam at sit incidunt recusandae modi, mollitia cumque, autem magni. Quisquam obcaecati quasi mollitia, minus voluptates delectus ullam hic at placeat enim sunt ea a, repellendus dolore iste minima cupiditate, quae officia perspiciatis. Harum, ad. Repudiandae eius et illum est ad, eligendi harum ut aut, odit sapiente quidem, illo nam cum. Non necessitatibus obcaecati ex? Voluptatem, est veniam aliquid facere nemo obcaecati perspiciatis eaque, non aspernatur magnam doloribus. Perferendis optio necessitatibus praesentium voluptatibus iste a quae, minus deleniti sunt! Iure iusto, dicta quidem culpa modi ab suscipit!
+        </div>
+        <div class="first-section" id="aboutcontent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos, tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores, soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate? Assumenda, iure esse explicabo architecto reiciendis, odit voluptatibus ipsam tenetur pariatur placeat impedit ad adipisci ducimus alias ea iste laudantium eligendi excepturi hic similique provident quas. Amet excepturi veniam enim asperiores id adipisci repellat exercitationem, velit sunt quo aspernatur aliquam voluptatem molestiae! Harum, est ipsum, exercitationem aperiam maiores, officiis quam vel quia magnam expedita error culpa. Tenetur laborum vero inventore illum assumenda ex quam harum expedita, deleniti quaerat. Excepturi dolorem possimus ipsum tempore consequuntur molestias! Asperiores, omnis! Ipsa amet excepturi odit provident commodi rerum nesciunt nobis nisi error veniam deserunt totam iste pariatur magnam at sit incidunt recusandae modi, mollitia cumque, autem magni. Quisquam obcaecati quasi mollitia, minus voluptates delectus ullam hic at placeat enim sunt ea a, repellendus dolore iste minima cupiditate, quae officia perspiciatis. Harum, ad. Repudiandae eius et illum est ad, eligendi harum ut aut, odit sapiente quidem, illo nam cum. Non necessitatibus obcaecati ex? Voluptatem, est veniam aliquid facere nemo obcaecati perspiciatis eaque, non aspernatur magnam doloribus. Perferendis optio necessitatibus praesentium voluptatibus iste a quae, minus deleniti sunt! Iure iusto, dicta quidem culpa modi ab suscipit!
+        </div>
+    </div>
+
+    <script>
+        let test = document.getElementById("abt-us-link");
+        test.addEventListener("click", addshadow);
+
+        function addshadow() {
+            document.getElementById("aboutcontent").classList.add("animateshadow");
+            setTimeout(function(){
+                document.getElementById("aboutcontent").classList.remove("animateshadow");
+            }, 800);
+        }
+    </script>
 </body>
 
 </html>
