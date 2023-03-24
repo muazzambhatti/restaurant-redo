@@ -48,32 +48,139 @@
         }
 
         #content-body {
-            border: 2px solid white;
+            border: 2px solid transparent;
+            background-color: rgb(8 0 0 / 70%);
+            width: 800px;
+            margin: 30px auto;
+        }
+
+        #content-box {
+            /* border: 2px solid rgba(255, 255, 255, 0); */
             width: 700px;
             margin: 30px auto;
         }
-        .first-section{
+
+        .main-content {
             margin: 30px 0px;
             color: white;
             text-align: justify;
         }
-        /* .shadow {
-            transition: all 0.4s;
-            box-shadow: 0px 5px 5px;
+
+        #aboutcontent {
+            width: 100%;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #services {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            width: 68%;
+            text-align: center;
+            font-size: larger;
+            box-sizing: border-box;
+            line-height: 25px;
+        }
+
+        #icon-box {
+            margin: auto auto;
+            width: 75%;
+            display: flex;
+            justify-content: space-evenly;
+            transition: all 0.8s;
+            /* color: white; */
+        }
+
+        .service-descriptions {
+            position: relative;
+            width: 100px;
+            aspect-ratio: 1/1;
+            text-align: center;
+            filter: invert(100);
+            text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+            font-size: x-large;
+            border-radius: 10px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .service-descriptions:hover {
+            background-color: #1e65ff4b;
+            color: #1e65ff;
+        }
+
+        #dining {
+            position: relative;
+            background-image: url(dinein.png);
+            background-size: 100px 100px;
+        }
+
+        #catering {
+            position: relative;
+            background-image: url(cater.png);
+            background-size: 100px 100px;
+
+        }
+
+        /* .leftTransform {
+            right: 100px;
+            transition: all 0.5s;
         } */
+
+        .carousel {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel img {
+            position: relative;
+            transition: all 0.6s;
+        }
+
+        .aboutdescription {
+            font-size: larger;
+            box-sizing: border-box;
+            padding: 15px;
+            line-height: 25px;
+        }
+
+        hr {
+            margin: 0px auto;
+            border: 0px;
+            height: 34px;
+            width: 580px;
+            background-image: url(hrimage.png);
+        }
+
+        .H_rule {
+            filter: invert(100%);
+            margin: 0px auto;
+            width: fit-content;
+        }
+
         .animateshadow {
             animation-name: shadowing;
-            animation-duration: 0.4s; animation-direction: alternate ;animation-iteration-count: 2;
+            animation-duration: 0.4s;
+            animation-direction: alternate;
+            animation-iteration-count: 2;
         }
+
         @keyframes shadowing {
             to {
-                box-shadow: 0px 5px 5px;
+                box-shadow: 0px 0px 10px;
             }
         }
+
         @media screen and (max-width: 420px) {
             #logoimg img {
                 width: 250px;
             }
+
             nav {
                 width: 320px;
                 font-size: 11px;
@@ -88,32 +195,142 @@
             <img src="logo-no-background.png" alt="restaurant logo">
         </div>
         <nav>
-            <a href="#aboutcontent" id="abt-us-link"><span>ABOUT US</span></a><a href="#services"><span>SERVICES</span></a><a href="#contact"><span>CONTACT US</span></a><a href="#order"><span>ORDER NOW</span></a>
+            <a href="#aboutcontent" id="abt-us-link"><span>ABOUT US</span></a><a
+                href="#services"><span>SERVICES</span></a><a href="#contact"><span>CONTACT US</span></a><a
+                href="#order"><span>ORDER NOW</span></a>
         </nav>
     </header>
     <div id="content-body">
-        <div class="first-section">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos, tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores, soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate? Assumenda, iure esse explicabo architecto reiciendis, odit voluptatibus ipsam tenetur pariatur placeat impedit ad adipisci ducimus alias ea iste laudantium eligendi excepturi hic similique provident quas. Amet excepturi veniam enim asperiores id adipisci repellat exercitationem, velit sunt quo aspernatur aliquam voluptatem molestiae! Harum, est ipsum, exercitationem aperiam maiores, officiis quam vel quia magnam expedita error culpa. Tenetur laborum vero inventore illum assumenda ex quam harum expedita, deleniti quaerat. Excepturi dolorem possimus ipsum tempore consequuntur molestias! Asperiores, omnis! Ipsa amet excepturi odit provident commodi rerum nesciunt nobis nisi error veniam deserunt totam iste pariatur magnam at sit incidunt recusandae modi, mollitia cumque, autem magni. Quisquam obcaecati quasi mollitia, minus voluptates delectus ullam hic at placeat enim sunt ea a, repellendus dolore iste minima cupiditate, quae officia perspiciatis. Harum, ad. Repudiandae eius et illum est ad, eligendi harum ut aut, odit sapiente quidem, illo nam cum. Non necessitatibus obcaecati ex? Voluptatem, est veniam aliquid facere nemo obcaecati perspiciatis eaque, non aspernatur magnam doloribus. Perferendis optio necessitatibus praesentium voluptatibus iste a quae, minus deleniti sunt! Iure iusto, dicta quidem culpa modi ab suscipit!
-        </div>
-        <div class="first-section">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos, tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores, soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate? Assumenda, iure esse explicabo architecto reiciendis, odit voluptatibus ipsam tenetur pariatur placeat impedit ad adipisci ducimus alias ea iste laudantium eligendi excepturi hic similique provident quas. Amet excepturi veniam enim asperiores id adipisci repellat exercitationem, velit sunt quo aspernatur aliquam voluptatem molestiae! Harum, est ipsum, exercitationem aperiam maiores, officiis quam vel quia magnam expedita error culpa. Tenetur laborum vero inventore illum assumenda ex quam harum expedita, deleniti quaerat. Excepturi dolorem possimus ipsum tempore consequuntur molestias! Asperiores, omnis! Ipsa amet excepturi odit provident commodi rerum nesciunt nobis nisi error veniam deserunt totam iste pariatur magnam at sit incidunt recusandae modi, mollitia cumque, autem magni. Quisquam obcaecati quasi mollitia, minus voluptates delectus ullam hic at placeat enim sunt ea a, repellendus dolore iste minima cupiditate, quae officia perspiciatis. Harum, ad. Repudiandae eius et illum est ad, eligendi harum ut aut, odit sapiente quidem, illo nam cum. Non necessitatibus obcaecati ex? Voluptatem, est veniam aliquid facere nemo obcaecati perspiciatis eaque, non aspernatur magnam doloribus. Perferendis optio necessitatibus praesentium voluptatibus iste a quae, minus deleniti sunt! Iure iusto, dicta quidem culpa modi ab suscipit!
-        </div>
-        <div class="first-section" id="aboutcontent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos, tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores, soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate? Assumenda, iure esse explicabo architecto reiciendis, odit voluptatibus ipsam tenetur pariatur placeat impedit ad adipisci ducimus alias ea iste laudantium eligendi excepturi hic similique provident quas. Amet excepturi veniam enim asperiores id adipisci repellat exercitationem, velit sunt quo aspernatur aliquam voluptatem molestiae! Harum, est ipsum, exercitationem aperiam maiores, officiis quam vel quia magnam expedita error culpa. Tenetur laborum vero inventore illum assumenda ex quam harum expedita, deleniti quaerat. Excepturi dolorem possimus ipsum tempore consequuntur molestias! Asperiores, omnis! Ipsa amet excepturi odit provident commodi rerum nesciunt nobis nisi error veniam deserunt totam iste pariatur magnam at sit incidunt recusandae modi, mollitia cumque, autem magni. Quisquam obcaecati quasi mollitia, minus voluptates delectus ullam hic at placeat enim sunt ea a, repellendus dolore iste minima cupiditate, quae officia perspiciatis. Harum, ad. Repudiandae eius et illum est ad, eligendi harum ut aut, odit sapiente quidem, illo nam cum. Non necessitatibus obcaecati ex? Voluptatem, est veniam aliquid facere nemo obcaecati perspiciatis eaque, non aspernatur magnam doloribus. Perferendis optio necessitatibus praesentium voluptatibus iste a quae, minus deleniti sunt! Iure iusto, dicta quidem culpa modi ab suscipit!
+        <div id="content-box">
+            <div class="jump-from-link main-content" id="aboutcontent">
+                <div class="carousel">
+                    <img id="slide" src="aboutPicsCollage.png" alt="pic carousel">
+                </div>
+                <div class="carousel aboutdescription">
+                    <h1 style="margin-top: 0px; color: #ff1e1e;">Who are we?</h1>
+                    <p>We are just a restaurant that doesnt exist and hence have no subtance . We offer imaginary
+                        quality and satisfaction, so if you just have time to waste then read away!</p>
+                </div>
+            </div>
+
+            <div class="H_rule"><img src="hrimage.png" alt=""><img src="hrimage.png" alt=""></div>
+
+            <div class="jump-from-link main-content" id="services">
+                <h1 style="margin-top: 0px; color: #ff1e1e;">What we offer?</h1>
+                <p">You can get all that can be obtained from a non-existant restaurant. But if you feel like it, check
+                    out our services free for everyone everywhere, because we dont exist, get it?</p>
+                    <p>Click on the icons to learn MORE.</p>
+            </div>
+
+            <div id="icon-box">
+                <div id="dining" class="service-descriptions">
+                    <h4>Dining</h4>
+                </div>
+                <div id="catering" class="service-descriptions">
+                    <h4>Catering</h4>
+                </div>
+            </div>
+
+
+            <div class="jump-from-link main-content" id="contact">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore
+                eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos,
+                tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores,
+                soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate?
+            </div>
+
         </div>
     </div>
 
     <script>
-        let test = document.getElementById("abt-us-link");
-        test.addEventListener("click", addshadow);
-
-        function addshadow() {
-            document.getElementById("aboutcontent").classList.add("animateshadow");
-            setTimeout(function(){
-                document.getElementById("aboutcontent").classList.remove("animateshadow");
-            }, 800);
+        for (let index = 0; index < 4; index++) {
+            document.querySelectorAll("span")[index].addEventListener("click", function () {
+                document.querySelectorAll(".jump-from-link")[index].classList.add("animateshadow");
+                setTimeout(function () {
+                    document.querySelectorAll(".jump-from-link")[index].classList.remove("animateshadow");
+                }, 800);
+            });
         }
+
+        let positionIndex = -300;
+
+        imagecarousel();
+
+        function imagecarousel() {
+            positionIndex += 300;
+            document.getElementById("slide").style.right = positionIndex + "px";
+            if (positionIndex == 900) {
+                positionIndex = -300;
+            }
+            setTimeout(imagecarousel, 4000);
+        }
+
+        let DineVar = document.getElementById("dining");
+        let CaterVar = document.getElementById("catering");
+
+        DineVar.addEventListener("click", showDine);
+        CaterVar.addEventListener("click", showCater);
+
+        // let right = false;
+        // let left = true;
+        let leftClick = false;
+        let rightClick = false;
+
+        function showDine() {
+            if (leftClick == false && rightClick == true) {
+                rightClick = false;
+                CaterVar.style.opacity = "1"
+                DineVar.style.opacity = "1"
+            }
+             switch (leftClick) {
+                case true:
+                    DineVar.style.transform = "translateX(0px)";
+                    CaterVar.style.transform = "translateX(0px)";
+                    CaterVar.style.opacity = "1"
+                    leftClick = false;
+                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
+                    break;
+                case false:
+                    DineVar.style.transform = "translateX(-100px)";
+                    CaterVar.style.transform = "translateX(100px)";
+                    CaterVar.style.opacity = "0.3"
+                    leftClick = true;
+                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
+                default:
+                    break;
+            }
+            
+        };
+        function showCater() {
+            if (rightClick == false && leftClick == true) {
+                leftClick = false;
+                DineVar.style.transform = "translateX(0px)";
+                CaterVar.style.transform = "translateX(0px)";
+                CaterVar.style.opacity = "1"
+                DineVar.style.opacity = "1"
+            }
+            switch (rightClick) {
+                case true:
+                    DineVar.style.transform = "translateX(0px)";
+                    CaterVar.style.transform = "translateX(0px)";
+                    DineVar.style.opacity = "1"
+                    rightClick = false;
+                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
+                    break;
+                case false:
+                    DineVar.style.transform = "translateX(-100px)";
+                    CaterVar.style.transform = "translateX(100px)";
+                    DineVar.style.opacity = "0.3"
+                    rightClick = true;
+                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
+                default:
+                    break;
+            }
+            
+        };
     </script>
+
+
 </body>
 
 </html>
