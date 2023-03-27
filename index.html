@@ -9,6 +9,7 @@
     <title>exquisite remade</title>
     <style>
         body {
+            height: 100%;
             margin: 0px;
             background-image: url(backgroundroll.gif);
             background-repeat: no-repeat;
@@ -45,6 +46,30 @@
         nav a:hover {
             border-color: rgb(255, 174, 0);
             color: rgb(255, 174, 0);
+        }
+
+        hr {
+            margin: 0px auto;
+            border: 0px;
+            height: 34px;
+            width: 580px;
+            background-image: url(hrimage.png);
+        }
+
+        .H_rule {
+            filter: invert(100%);
+            margin: 0px auto;
+            width: fit-content;
+            border: 3px solid rgb(0, 0, 0);
+            border-left: 0px;
+            border-right: 0px;
+        }
+
+        .animateshadow {
+            animation-name: shadowing;
+            animation-duration: 0.4s;
+            animation-direction: alternate;
+            animation-iteration-count: 2;
         }
 
         #content-body {
@@ -125,11 +150,6 @@
 
         }
 
-        /* .leftTransform {
-            right: 100px;
-            transition: all 0.5s;
-        } */
-
         .carousel {
             width: 300px;
             height: 200px;
@@ -149,25 +169,74 @@
             line-height: 25px;
         }
 
-        hr {
+        #service-details {
+            width: 480px;
             margin: 0px auto;
-            border: 0px;
-            height: 34px;
-            width: 580px;
-            background-image: url(hrimage.png);
+            overflow: auto;
+            color: white;
+            margin-bottom: 25px;
         }
 
-        .H_rule {
-            filter: invert(100%);
-            margin: 0px auto;
-            width: fit-content;
+        #dining-detail {
+            border: 1px solid rgba(255, 0, 0, 0);
+            text-align: justify;
+            width: 390px;
+            height: 0px;
+            float: left;
+            font-size: larger;
+            line-height: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
         }
 
-        .animateshadow {
-            animation-name: shadowing;
-            animation-duration: 0.4s;
-            animation-direction: alternate;
-            animation-iteration-count: 2;
+        #catering-detail {
+            text-align: justify;
+            border: 1px solid rgba(255, 0, 0, 0);
+            width: 420px;
+            height: 0px;
+            float: right;
+            clear: left;
+            font-size: larger;
+            line-height: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        #contact {
+            text-align: center;
+            margin: 0px auto;
+            width: 600px;
+        }
+
+        #social-icons {
+            display: flex;
+            flex-direction: column;
+            width: 110px;
+            filter: invert(100);
+        }
+
+        #email-form {
+            border-left: 3px solid white;
+            padding-left: 25px;
+            width: 350px;
+            height: 310px;
+            text-align: left;
+        }
+
+        form textarea {
+            border-radius: 10px;
+            background-color: rgba(255, 228, 196, 0.415);
+            color: white;
+            text-align: left;
+            font-size: large;
+        }
+
+        form input {
+            cursor: pointer;
+            font-size: medium;
+            margin: 5px;
+            padding: 3px 10px;
+            border-radius: 5px;
         }
 
         @keyframes shadowing {
@@ -195,10 +264,10 @@
             <img src="logo-no-background.png" alt="restaurant logo">
         </div>
         <nav>
-            <a href="#aboutcontent" id="abt-us-link"><span>ABOUT US</span></a><a
-                href="#services"><span>SERVICES</span></a><a href="#contact"><span>CONTACT US</span></a><a
-                href="#order"><span>ORDER NOW</span></a>
+            <a href="#aboutcontent" id="abt-us-link"><span>ABOUT US</span></a><a href="#services">
+                <span>SERVICES</span></a><a href="#contact"><span>CONTACT US</span></a>
         </nav>
+
     </header>
     <div id="content-body">
         <div id="content-box">
@@ -231,19 +300,48 @@
                 </div>
             </div>
 
+            <div id="service-details">
+                <div id="dining-detail">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, quibusdam asperiores minima
+                    dolorem praesentium voluptate earum eaque tempore illo non in sapiente ipsum autem perferendis
+                    architecto, corporis amet optio voluptates odio quod? Ipsam, dolore eos?
+                </div>
+                <div id="catering-detail">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, quibusdam asperiores minima
+                    dolorem praesentium voluptate earum eaque tempore illo non in sapiente ipsum autem perferendis
+                    architecto, corporis amet optio voluptates odio quod? Ipsam, dolore eos?
+                </div>
+            </div>
+
+            <div class="H_rule"><img src="hrimage.png" alt=""><img src="hrimage.png" alt=""></div>
 
             <div class="jump-from-link main-content" id="contact">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem quae incidunt, labore
-                eveniet vero quasi repudiandae iste totam distinctio porro veniam consequuntur esse, dignissimos,
-                tempora veritatis sapiente magni alias inventore excepturi quo? Quos dolorem dolor sunt a iusto dolores,
-                soluta atque similique eaque nobis asperiores adipisci ipsa eligendi, placeat fugit voluptate?
+                <h1 style="color: #ff1e1e;">How to contact us?</h1>
+                <div style="display: flex;">
+                    <div id="social-icons">
+                        <h3 style="color: black;">Through social media:</h3>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="fb.png" alt=""></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" alt=""></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" alt=""></a>
+                    </div>
+                    <div id="email-form">
+                        <h3 style="margin-bottom: 0px;">OR</h3>
+                        <h3 style="margin-top: 0px;">Through E-mail:</h3>
+                        <form>
+                            <textarea cols="50" rows="10">
+                            </textarea>
+                            <input type="button" value="Send" id="sendemail">
+                        </form>
+
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
 
     <script>
-        for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 3; index++) {
             document.querySelectorAll("span")[index].addEventListener("click", function () {
                 document.querySelectorAll(".jump-from-link")[index].classList.add("animateshadow");
                 setTimeout(function () {
@@ -253,9 +351,7 @@
         }
 
         let positionIndex = -300;
-
         imagecarousel();
-
         function imagecarousel() {
             positionIndex += 300;
             document.getElementById("slide").style.right = positionIndex + "px";
@@ -267,47 +363,44 @@
 
         let DineVar = document.getElementById("dining");
         let CaterVar = document.getElementById("catering");
-
+        let DineDetail = document.getElementById("dining-detail");
+        let CaterDetail = document.getElementById("catering-detail");
         DineVar.addEventListener("click", showDine);
         CaterVar.addEventListener("click", showCater);
-
-        // let right = false;
-        // let left = true;
         let leftClick = false;
         let rightClick = false;
-
         function showDine() {
             if (leftClick == false && rightClick == true) {
                 rightClick = false;
                 CaterVar.style.opacity = "1"
                 DineVar.style.opacity = "1"
+                DineDetail.style.height = "0px"
+                CaterDetail.style.height = "0px"
             }
-             switch (leftClick) {
+            switch (leftClick) {
                 case true:
                     DineVar.style.transform = "translateX(0px)";
                     CaterVar.style.transform = "translateX(0px)";
                     CaterVar.style.opacity = "1"
                     leftClick = false;
-                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
+                    DineDetail.style.height = "0px"
                     break;
                 case false:
                     DineVar.style.transform = "translateX(-100px)";
                     CaterVar.style.transform = "translateX(100px)";
                     CaterVar.style.opacity = "0.3"
                     leftClick = true;
-                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
-                default:
-                    break;
+                    DineDetail.style.height = "120px"
             }
-            
+
         };
         function showCater() {
             if (rightClick == false && leftClick == true) {
                 leftClick = false;
-                DineVar.style.transform = "translateX(0px)";
-                CaterVar.style.transform = "translateX(0px)";
                 CaterVar.style.opacity = "1"
                 DineVar.style.opacity = "1"
+                DineDetail.style.height = "0px"
+                CaterDetail.style.height = "0px"
             }
             switch (rightClick) {
                 case true:
@@ -315,19 +408,24 @@
                     CaterVar.style.transform = "translateX(0px)";
                     DineVar.style.opacity = "1"
                     rightClick = false;
-                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
+                    CaterDetail.style.height = "0px"
                     break;
                 case false:
                     DineVar.style.transform = "translateX(-100px)";
                     CaterVar.style.transform = "translateX(100px)";
                     DineVar.style.opacity = "0.3"
                     rightClick = true;
-                    console.log("left icon is "+leftClick+" , right icon is "+rightClick);
-                default:
-                    break;
+                    CaterDetail.style.height = "120px"
             }
-            
         };
+
+        let sendbtn = document.getElementById("sendemail");
+        sendbtn.addEventListener("click", changehtml)
+
+        function changehtml() {
+            document.getElementById("email-form").innerHTML = `<p style="text-align:center;font-size:30px;">We will contact you soon!<p>`;
+        };
+
     </script>
 
 
